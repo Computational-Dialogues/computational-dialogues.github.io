@@ -3,40 +3,69 @@
 
 <head>
   <title>Computational Dialogues</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
   <style>
+    /* Palette */
+
+    :root {
+      --codi-gray: oklch(0.3211 0 0);
+    }
+
+
     body {
-      font-family: 'Helvetica Neue', Helvetica, sans-serif;
-      color: #888;
-      background: #222;
+      font-family: "Instrument Sans", sans-serif;
+      font-family: "Instrument Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      font-variation-settings:
+        "wdth" 100;
+      color: oklch(0.6268 0 0);
+      background: oklch(0.252 0 0);
       margin: 3% 10% 0 10%;
       /* overflow:hidden; */
     }
 
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: 500;
+      filter: sepia(50%);
+    }
+
+    h2::before {
+      text-decoration: dotted;
+    }
+
     .codi {
-      color: #9999aa;
+      color: var(--codi-gray);
     }
 
+    a,
     .lnk {
-      color: #777788;
-    }
-
-    a {
       color: #808c99;
       text-decoration: none;
     }
 
-    a:hover {
+    a:hover,
+    .lnk:hover {
       color: #a3baee;
     }
 
     .sassy {
-      color: #998099;
+      color: oklch(0.45 0.047 326.12);
     }
 
     #titre {
       font-size: 44px;
       line-height: 50px;
-      color: #333333;
+      color: var(--codi-gray);
       display: block;
     }
 
@@ -44,8 +73,32 @@
       color: #9999aa;
     }
 
-    #titre #idee {
-      color: #444455;
+    .brief {
+      font-size: 1.5rem
+    }
+
+    hr {
+      border: 0.5px dotted oklch(0.75 20% 300);
+      opacity: 50%;
+    }
+
+    .dls {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .station {
+      font-weight: 600;
+    }
+
+    .btitle {
+      font-style: italic;
+    }
+
+    .metadate {
+      font-size: 0.85rem;
+      padding-top: 0.65rem;
+      filter: sepia(100%);
     }
 
     #footer {
@@ -54,7 +107,7 @@
 
     #footer p {
       font-size: 12px;
-      color: #333333;
+      color: var(--codi-gray);
     }
 
     iframe {
@@ -76,25 +129,87 @@
 <body>
   <header>
     <div id="titre">
-      <span id="codi">Computational</span> Dialogues
+      <span id="codi">Computational</span> <span class="sassy">Dialogues</span>
     </div>
   </header>
   <section>
-    <p>
-      <a class="lnk">Computational Dialogues</a> is a live coding course focused on introducing live coding as an art
-      practice of engaging in dialogues. Live coding practice involves the understanding and development of
-      improvisational skills. Through weekly exercises, students are taught live coding languages to create
+    <p class="brief">
+      <a class="lnk">Computational Dialogues (CODI)</a> is a course that introduces live coding as an art
+      practice for engaging in dialogues. Live coding practice teaches and develops improvisational skills. Through
+      weekly exercises, students are taught esoteric programming languages to create
       audiovisual and performative works. <br />
-    <p>&copy; 2026</p>
+    </p>
+  </section>
+
+  <section>
+    <div>&nbsp;</div>
+    <hr />
+    <div class="sassy">CODI Algorave Server</div>
+    <div>&nbsp;</div>
+    <h2>Performances</h2>
+    <section class="dls">
+      <dl>
+        <dd class="station">Server: <a href="https://live.nbcli.space" target="_blank">nbcli live</a></dd>
+        <dd class="btitle">First Run</dd>
+        <dd class="metadate">March 14-15, 2026</dd>
+      </dl>
+      <dl>
+        <dd class="station">Server: <a href="https://live.nbcli.space" target="_blank">nbcli live</a></dd>
+        <dd class="btitle">CODI Live Critiques</dd>
+        <dd class="metadate">April 2, 2026 @ 1:00pm EST</dd>
+      </dl>
+    </section>
+  </section>
+
+  <section>
+    <div>&nbsp;</div>
+    <hr />
+    <div class="sassy">CODI Pirate Radio</div>
+    <div>&nbsp;</div>
+    <h2>Broadcasts</h2>
+    <section class="dls">
+      <dl>
+        <dd class="station">RADIO 3</dd>
+        <dd class="btitle">Live coding études</dd>
+        <dd class="metadate">TBA</dd>
+      </dl>
+      <dl>
+        <dd class="station">CODI Journal </dd>
+        <dd class="btitle">Seminar: General MIDI</dd>
+        <dd class="metadate">TBA</dd>
+      </dl>
+      <dl>
+        <dd class="station">Radiophonie </dd>
+        <dd class="btitle">* Radiophonic Arts (2023)</dd>
+        <dd class="metadate">TBA</dd>
+      </dl>
+      <dl>
+        <dd class="station">Radiophonie </dd>
+        <dd class="btitle">* Radiophonic Arts (2022)</dd>
+        <dd class="metadate">TBA</dd>
+      </dl>
+    </section>
+  </section>
+
+  <section>
     &nbsp; &nbsp;<br />
     &nbsp; &nbsp;<br />
     <iframe src="https://norns.online/magfoto" title="CODI Live Coding Pirate Radio" width="880px" height="700px"
       referrerpolicy="origin" allowfullscreen>
     </iframe>
-    </p>
   </section>
 
   <footer>
+    <section>
+      <div>&nbsp;</div>
+      <hr />
+      <div class="sassy">
+        <p>&copy; 2026 | <span class="lnk">Computational Dialogues</span> is an undergraduate studio at <a
+            href="https://ocadu.ca" target="_blank">OCAD University</a>.</p>
+      </div>
+      <div>&nbsp;</div>
+      <div>&nbsp;</div>
+    </section>
   </footer>
 
 </body>
