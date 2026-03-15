@@ -11,20 +11,28 @@
     /* Palette */
 
     :root {
+      --codi-primer: oklch(0.6268 0 0);
+      --codi-hyper: oklch(0.6347 0.024 250.34);
+      --codi-bg: oklch(0.252 0 0);
+      --codi-st: oklch(0.75 10% 0);
+      --codi-blue: oklch(0.7901 0.0786 266.06);
       --codi-gray: oklch(0.3211 0 0);
+      --codi-sass: oklch(0.75 20% 300);
+      --codi-gold: oklch(0.8868 0.182186 95.3305);
+      --sassy: oklch(0.45 0.047 326.12);
     }
 
 
     body {
       font-family: "Instrument Sans", sans-serif;
-      font-family: "Instrument Sans", sans-serif;
+      font-size: 20px;
       font-optical-sizing: auto;
-      font-weight: 400;
+      font-weight: 500;
       font-style: normal;
       font-variation-settings:
         "wdth" 100;
-      color: oklch(0.6268 0 0);
-      background: oklch(0.252 0 0);
+      color: var(--codi-primer);
+      background: var(--codi-bg);
       margin: 3% 10% 0 10%;
       /* overflow:hidden; */
     }
@@ -47,38 +55,41 @@
       color: var(--codi-gray);
     }
 
-    a,
-    .lnk {
-      color: oklch(0.6347 0.024 250.34);
+    a {
+      color: var(--codi-hyper);
       text-decoration: none;
     }
 
-    a:hover,
-    .lnk:hover {
-      color: oklch(0.7901 0.0786 266.06);
+    a:hover {
+      color: var(--codi-blue);
     }
 
-    .sassy {
-      color: oklch(0.45 0.047 326.12);
+    .stencil {
+      font-size: 0.85rem;
+      color: var(--sassy);
     }
 
     #titre {
-      font-size: 44px;
-      line-height: 50px;
-      color: var(--codi-gray);
+      font-size: 2.75rem;
+      line-height: 2.75rem;
       display: block;
     }
 
-    #titre #codi {
-      color: oklch(0.6885 0.0247 285.73);
+    .co {
+      color: var(--sassy);
+    }
+
+    .di {
+      color: var(--codi-sass);
     }
 
     .brief {
-      font-size: 1.5rem
+      font-size: 1.5rem;
+      font-weight: 400;
     }
 
     hr {
-      border: 0.5px dotted oklch(0.75 20% 300);
+      border: 0.5px dotted var(--codi-sass);
       opacity: 50%;
     }
 
@@ -89,6 +100,7 @@
 
     .station {
       font-weight: 600;
+      color: var(--codi-st);
     }
 
     .btitle {
@@ -101,13 +113,17 @@
       filter: sepia(100%);
     }
 
-    #footer {
-      display: block;
+    .metalive {
+      filter: sepia(0);
+      color: oklch(0.75 5% 300deg);
+      text-shadow: 0 0 10px var(--codi-gold), 0 0 24px var(--codi-hyper);
     }
 
-    #footer p {
-      font-size: 12px;
-      color: var(--codi-gray);
+    footer {
+      display: block;
+      font-weight: 400;
+      font-size: 0.95rem;
+      color: var(--codi-primer);
     }
 
     iframe {
@@ -129,12 +145,12 @@
 <body>
   <header>
     <div id="titre">
-      <span id="codi">Computational</span> <span class="sassy">Dialogues</span>
+      <span class="co">Computational</span> <span class="di">Dialogues</span>
     </div>
   </header>
   <section>
     <p class="brief">
-      <a class="lnk">Computational Dialogues (CODI)</a> is a course that introduces live coding as an art
+      Computational Dialogues (CODI) is a course that introduces live coding as an art
       practice for engaging in dialogues. Live coding practice teaches and develops improvisational skills. Through
       weekly exercises, students are taught esoteric programming languages to create
       audiovisual and performative works. <br />
@@ -144,14 +160,14 @@
   <section>
     <div>&nbsp;</div>
     <hr />
-    <div class="sassy">CODI Algorave Server</div>
+    <div class="stencil">CODI Algorave Server</div>
     <div>&nbsp;</div>
     <h2>Performances</h2>
     <section class="dls">
       <dl>
         <dd class="station">Server: <a href="https://live.nbcli.space" target="_blank">nbcli live</a></dd>
         <dd class="btitle">First Run</dd>
-        <dd class="metadate">March 14-15 (intermittent)</dd>
+        <dd class="metadate metalive">March 14-15 (intermittent)</dd>
       </dl>
       <dl>
         <dd class="station">Server: <a href="https://live.nbcli.space" target="_blank">nbcli live</a> </dd>
@@ -169,18 +185,18 @@
   <section>
     <div>&nbsp;</div>
     <hr />
-    <div class="sassy">CODI Pirate Radio</div>
+    <div class="stencil">CODI Pirate Radio</div>
     <div>&nbsp;</div>
     <h2>Broadcasts</h2>
     <section class="dls">
       <dl>
         <dd class="station">RADIO 3</dd>
         <dd class="btitle">Live coding études</dd>
-        <dd class="metadate">TBA (last play 12:50 pm)</dd>
+        <dd class="metadate">TBA</dd>
       </dl>
       <dl>
         <dd class="station">CODI Journal </dd>
-        <dd class="btitle">Seminar: General MIDI</dd>
+        <dd class="btitle">Comprovisations</dd>
         <dd class="metadate">TBA</dd>
       </dl>
       <dl>
@@ -205,17 +221,12 @@
   </section>
 
   <footer>
-    <section>
-      <div>&nbsp;</div>
-      <hr />
-      <div class="sassy">
-        <p>&copy; 2026 | <span class="lnk">Computational Dialogues</span> is an undergraduate studio at <a
-            href="https://ocadu.ca" target="_blank">OCAD University</a>. Created by <a href="https://magfoto.dev"
-            target="_blank">magfoto</a>.</p>
-      </div>
-      <div>&nbsp;</div>
-      <div>&nbsp;</div>
-    </section>
+    <div>&nbsp;</div>
+    <hr />
+    <p>&copy; 2026 | Computational Dialogues is an undergraduate studio at <a href="https://ocadu.ca"
+        target="_blank">OCAD University</a>. Created by <a href="https://magfoto.dev" target="_blank">magfoto</a>.</p>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
   </footer>
 
 </body>
