@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CODI: Why?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Palette */
+
+        :root {
+            --codi-primer: oklch(0.6268 0 0);
+            --codi-hyper: oklch(0.6347 0.024 250.34);
+            --codi-bg: oklch(0.252 0 0);
+            --codi-bg2: oklch(0.4555 0 0);
+            --codi-st: oklch(0.75 10% 0);
+            --codi-blue: oklch(0.7901 0.0786 266.06);
+            --codi-gray: oklch(0.3211 0 0);
+            --codi-sass: oklch(0.75 20% 300);
+            --codi-gold: oklch(0.8868 0.182186 95.3305);
+            --codi-steel: oklch(0.8078 0 0);
+            --sassy: oklch(0.45 0.047 326.12);
+            --white: oklch(1.0 0 0);
+            --black: oklch(0 0 0);
+        }
+
+
+        body {
+            font-family: "Instrument Sans", sans-serif;
+            font-size: 20px;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
+            color: var(--codi-primer);
+            background: var(--codi-bg);
+            margin: 3% 10% 0 10%;
+            /* overflow:hidden; */
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 500;
+            filter: sepia(50%);
+        }
+
+        h2::before {
+            text-decoration: dotted;
+        }
+
+        .codi {
+            color: var(--codi-gray);
+        }
+
+        a {
+            color: var(--codi-hyper);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: var(--codi-blue);
+        }
+
+        li {
+            display: inline;
+            max-width: 80px;
+            text-align: center;
+            border: 0.5px solid var(--codi-bg2);
+            border-radius: 4px;
+            padding: 0 2px 0 2px;
+            background-color: var(--black);
+            color: var(--codi-gray);
+            font-size: 1.1rem;
+            list-style-type: none;
+        }
+
+        #active {
+            filter: sepia(75%);
+        }
+
+        .stencil {
+            font-size: 0.85rem;
+            color: var(--sassy);
+        }
+
+        #titre {
+            font-size: 2.75rem;
+            line-height: 2.75rem;
+            display: block;
+        }
+
+        .co {
+            color: var(--sassy);
+        }
+
+        .di {
+            color: var(--codi-sass);
+        }
+
+        .brief {
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+
+        .copy {
+            font-size: 1.25rem;
+            font-weight: 400;
+            color: var(--codi-primer);
+        }
+
+        hr {
+            border: 0.5px dotted var(--codi-sass);
+            opacity: 50%;
+        }
+
+        .dls {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        .pad {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .pad p {
+            padding-right: 20px;
+        }
+
+        .station {
+            font-weight: 600;
+            color: var(--codi-st);
+        }
+
+        .btitle {
+            font-style: italic;
+        }
+
+        .metadate {
+            font-size: 0.85rem;
+            padding-top: 0.65rem;
+            filter: sepia(100%);
+        }
+
+        .metalive {
+            filter: sepia(0);
+            color: oklch(0.75 5% 300deg);
+            text-shadow: 0 0 10px var(--codi-gold), 0 0 24px var(--codi-hyper);
+        }
+
+        footer {
+            display: block;
+            font-weight: 400;
+            font-size: 0.95rem;
+            color: var(--codi-primer);
+        }
+
+        iframe {
+            border: none;
+            overflow: hidden;
+            scrollbar-width: none;
+            /* Firefox */
+            -ms-overflow-style: none;
+            /* IE and Edge */
+        }
+
+        iframe::-webkit-scrollbar {
+            display: none;
+            /* Hide scrollbar for Chrome, Safari and Opera */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="titre">
+            <span class="co">Computational</span> <span class="di">Dialogues</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">🔙</a></li>
+                <li id="active"><a href="why.html">Why?</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="pad"">
+        <p class=" copy">The Computational Dialogues (CODI) course explores methods to further remove barriers to
+        coding, an
+        essential skillset that is growing within many pedagogical circles including art and design education, and
+        is an essential element of STEAM. Students sometimes grapple with ways in which they can explore topics
+        outside of their domain of study, which is crucial to their knowledge growth and building of diverse
+        relationships in their practices.</p>
+        <p class="copy">This course supports the idea that creative coding is an interdisciplinary skillset that allows
+            for this cross-domain curiosity to be stimulated (see <a
+                href="https://postdigitalgraphicdesign.com/introduction" target="_blank">Code to Learn philosophy</a>).
+            Often left
+            to the conventional internship protocol, or
+            student-industry matchmaking process, Computational Dialogues provides students a space to build a
+            repertoire of works in a cyclical manner throughout a term, giving them real-time practice, and knowledge
+            building
+            experience to develop their abilities in computational thinking. <br />
+        </p>
+    </section>
+
+
+
+    <footer>
+        <div>&nbsp;</div>
+        <hr />
+        <p>&copy; 2026 | Computational Dialogues is an undergraduate studio at <a href="https://ocadu.ca"
+                target="_blank">OCAD University</a>. Created by <a href="https://magfoto.dev"
+                target="_blank">magfoto</a>.</p>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+    </footer>
+
+</body>
+
+</html>
