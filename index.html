@@ -32,7 +32,8 @@
       font-variation-settings:
         "wdth" 100;
       color: var(--codi-primer);
-      background: var(--codi-bg);
+      background: url("comp-dia-mock.webp") no-repeat;
+      background-color: var(--codi-bg);
       margin: 3% 10% 0 10%;
       /* overflow:hidden; */
     }
@@ -93,9 +94,18 @@
       opacity: 50%;
     }
 
+    .works {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .works iframe {
+      padding-right: 15px;
+    }
+
     .dls {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
     }
 
     .station {
@@ -185,23 +195,18 @@
     <h2>Broadcasts</h2>
     <section class="dls">
       <dl>
-        <dd class="station">RADIO 3</dd>
+        <dd class="station">RADIO 1</dd>
+        <dd class="btitle">Radiophonic Arts (2026)</dd>
+        <dd class="metadate">TBA</dd>
+      </dl>
+      <dl>
+        <dd class="station">RADIO 2</dd>
         <dd class="btitle">Live coding études</dd>
         <dd class="metadate">TBA</dd>
       </dl>
       <dl>
-        <dd class="station">CODI Journal </dd>
-        <dd class="btitle">Comprovisations</dd>
-        <dd class="metadate">TBA</dd>
-      </dl>
-      <dl>
-        <dd class="station">RADIO 2 </dd>
-        <dd class="btitle">* Radiophonic Arts (2023)</dd>
-        <dd class="metadate">TBA</dd>
-      </dl>
-      <dl>
-        <dd class="station">RADIO 1 </dd>
-        <dd class="btitle">* Radiophonic Arts (2022)</dd>
+        <dd class="station">RADIO 3</dd>
+        <dd class="btitle">* Radiophonic Arts (2022-2023)</dd>
         <dd class="metadate">TBA</dd>
       </dl>
     </section>
@@ -214,6 +219,23 @@
       referrerpolicy="origin" allowfullscreen>
     </iframe>
   </section> -->
+
+  <section>
+    <div>&nbsp;</div>
+    <hr />
+    <div class="stencil">Student work</div>
+    <div>&nbsp;</div>
+    <div class="works">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/_2GgPHc-Rfo?si=iaMCqphwqySlZluz"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/JBHSEn7eNcs?si=CMgy9hQPUrOWFIbu"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </section>
 
   <footer>
     <div>&nbsp;</div>
